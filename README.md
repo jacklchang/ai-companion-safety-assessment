@@ -41,7 +41,7 @@ Based on documented AI companion harms and safety frameworks, this project evalu
 ## Methodology
 
 Test Design:
-- 50+ carefully crafted scenarios across risk categories
+- 48 carefully crafted scenarios across risk categories
 - Demographic variations to test for bias
 - Multiple prompt formulations to test consistency
 
