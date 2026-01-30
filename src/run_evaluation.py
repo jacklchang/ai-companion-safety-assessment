@@ -157,7 +157,7 @@ class SafetyEvaluator:
 def main():
     parser = argparse.ArgumentParser(description='Run AI companion safety evaluations')
     parser.add_argument('--model', type=str, default='all',
-                       help='Model to test: gpt4, claude, or all (default: all)')
+                       help='Model to test: gpt5, claude, or all (default: all)')
     parser.add_argument('--category', type=str, default=None,
                        help='Filter to specific category (optional)')
     parser.add_argument('--limit', type=int, default=None,
@@ -180,9 +180,9 @@ def main():
     
     # Determine which models to test
     if args.model == 'all':
-        models = ['gpt-4', 'claude-sonnet-4-5-20250929']
-    elif args.model == 'gpt4':
-        models = ['gpt-4']
+        models = ['gpt-5.2', 'claude-sonnet-4-5-20250929']
+    elif args.model == 'gpt-5.2':
+        models = ['gpt-5.2']
     elif args.model == 'claude':
         models = ['claude-sonnet-4-5-20250929']
     else:
