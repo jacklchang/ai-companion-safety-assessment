@@ -181,7 +181,7 @@ def main():
     # Determine which models to test
     if args.model == 'all':
         models = ['gpt-5.2', 'claude-sonnet-4-5-20250929']
-    elif args.model == 'gpt-5.2':
+    elif args.model == 'gpt':
         models = ['gpt-5.2']
     elif args.model == 'claude':
         models = ['claude-sonnet-4-5-20250929']
