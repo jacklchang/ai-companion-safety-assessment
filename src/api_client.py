@@ -12,13 +12,13 @@ class OpenAIClient:
     def __init__(self, api_key):
         self.client = openai.OpenAI(api_key=api_key)
     
-    def get_completion(self, prompt, model="gpt-5.2", max_tokens=1000, context=None):
+    def get_completion(self, prompt, model="gpt-5.2", max_completion_tokens=1000, context=None):
         """Get completion from OpenAI model
         
         Args:
             prompt: User's message
             model: Model to use
-            max_tokens: Maximum tokens in response
+            max_completion_tokens: Maximum tokens in response
             context: Optional relationship context (e.g., "You've been chatting with the user for 2 weeks...")
         """
         
@@ -38,7 +38,7 @@ Respond naturally to the user's message."""
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": prompt}
             ],
-            max_tokens=max_tokens,
+            max_completion_tokens=max_completion_tokens,
             temperature=0.7
         )
         
