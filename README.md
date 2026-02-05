@@ -56,3 +56,5 @@ Models Tested:
 - Claude 3.5 Sonnet (Anthropic)
 Note: These models were selected because they have public APIs that are consistent and well documented. In the future, I hope to expand to other models that host AI companions e.g. CharacterAI.
 
+## Blog
+Follow my indepth analysis on my substack starting with [part 1](https://open.substack.com/pub/jacklucaschang/p/ai-companion-safety-assessment-part?r=98akp&utm_campaign=post&utm_medium=web).
