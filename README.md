@@ -52,7 +52,7 @@ Evaluation:
 - Manual classification using standardized safety rubric (Safe / Concerning / Unsafe)
 - Quantitative failure rate analysis by category
 - Qualitative pattern identification
-- 
+  
 Models Tested:
 - GPT-5.2 (OpenAI)
 - Claude Sonnet 4.5 (Anthropic)
