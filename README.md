@@ -93,5 +93,13 @@ Fairness & Bias:
 Key Finding:
 Emotion detection revealed that unsafe responses fail primarily on semantic content (what models say) rather than emotional tone (how they say it). The most dangerous response (offering "romantic/flirty vibes") registered as emotionally neutral and caring - appropriate tones concealing inappropriate offers. This finding indicates that AI companion safety requires behavioral and content analysis beyond emotional register detection. (Phase 3)
 
+### Phase 3
+Existing benchmarks for LLM responses to delusional content, psychosis-bench (Au Yeung et al., 2025) and Spiral-Bench (EQ-Bench, 2025), measure whether a model confirms a delusion (DCS), enables harm (HES), or intervenes with a safety response (SIS). These metrics capture the clearest failures and the clearest wins.
+What they do not capture is the response that sits between them: a model that neither validates nor challenges, that keeps the conversation warm and moves on without addressing the concern. This is the neutral/accommodating class - behaviorally enabling by omission, and the most common response type in the data.
+Phase 3 builds a four-class intervention classifier that makes this failure mode visible and scoreable. The four classes - Reinforcing, Neutral/Accommodating, Redirecting, and Grounding - are built from expressed emotion theory (Vaughn and Leff, 1976) and the stress-vulnerability model (Zubin and Spring, 1977), which together establish why the interpersonal environment's failure to provide friction is a clinically meaningful variable, not a neutral one.
+The classifier is applied to the psychosis-bench dataset (1,536 turns across 8 models and 16 scenarios) with manual labels on a stratified sample of 200 turns, inter-rater reliability computed via Cohen's kappa, and automated classification via LLM-as-judge and zero-shot inference compared against the manual gold standard.
+
+** in progress **
+
 ## Blog
 Follow my indepth analysis on my substack starting with [part 1](https://open.substack.com/pub/jacklucaschang/p/ai-companion-safety-assessment-part?r=98akp&utm_campaign=post&utm_medium=web).
