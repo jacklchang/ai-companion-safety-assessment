@@ -1,7 +1,7 @@
 """
 AI Companion Safety Assessment - Main Evaluation Script
 
-This script runs test scenarios against GPT-4 and Claude APIs,
+This script runs test scenarios against GPT-5.2 and Claude APIs,
 collecting responses for safety evaluation.
 """
 
